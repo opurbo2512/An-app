@@ -76,7 +76,3 @@ with st.container():
     with right_column:
         st.empty()
     
-with st.container():
-    st.header("Contact with me")
-    st.markdown("📞")
-    st.link_button("Email","opurbo2512@gmail.com")
