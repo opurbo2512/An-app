@@ -24,18 +24,6 @@ button[type=submit]:hover {
   background-color: #45a049;
 }
 
-.sty1 button{
-  background-color: #14B8A6;
-  color: #FFFFFF;
-  border: 1px solid #4FC3F7 !important;
-  border-radius: 6px;
-}
-.sty2 button{
-  background-color: #14B8A6;
-  color: #FFFFFF;
-  border: 1px solid #4FC3F7 !important;
-  border-radius: 6px;
-}
 
 
 #MainMenu {visibility: hidden;}
