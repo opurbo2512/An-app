@@ -5,7 +5,7 @@ from PIL import Image
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
-menu = st.sidebar.selectbox("Select page:",["Home","My Projects","Admin"])
+menu = st.sidebar.selectbox("Select page:",["Home","My Projects"])
 st.markdown(
     """
     <style>
@@ -100,30 +100,3 @@ if menu == "My Projects":
         with c8:
             img2 = Image.open("img.jpeg")
             st.image(img2,width=200)
-
-if menu == "Admin":
-    if "context" not in st.session_state:
-        st.session_state.context = False
-
-    k1 = "opurbo"
-    k2 = "2B@ornot2B"
-
-    if not st.session_state.context:
-        st.subheader("This page is only for admin.")
-        with st.container():
-            st.write("Enter your name and password:")
-            t1 = st.text_input("Name",key="sty1")
-            t2 = st.text_input("Password",key="sty2")
-        b3 = st.button("Submit")
-        if b3:
-            if t1==k1 and t2==k2:
-                st.session_state.context = True
-            else:
-                st.error("Your given data is wrong.\nTry again")
-
-    if st.session_state.context:
-        st.write("Hello Opurbo.")
-        st.write("She is gone.Focus on yourself")
-
-
-    
