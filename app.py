@@ -6,6 +6,16 @@ from PIL import Image
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
 menu = st.sidebar.selectbox("Select page:",["Home","My Projects","Admin"])
+st.markdown(
+    """
+    <style>
+    [data-testid="stSidebar"] {
+        background-color: #00172B;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 def load_lottiefile(filepath):
     with open(filepath, "r") as f:
