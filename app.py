@@ -112,8 +112,8 @@ if menu == "Admin":
         st.subheader("This page is only for admin.")
         with st.container():
             st.write("Enter your name and password:")
-            t1 = st.text_input("Name")
-            t2 = st.text_input("Password")
+            t1 = st.text_input("Name",key="sty1")
+            t2 = st.text_input("Password",key="sty2")
         b3 = st.button("Submit")
         if b3:
             if t1==k1 and t2==k2:
