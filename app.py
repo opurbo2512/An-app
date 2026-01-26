@@ -100,3 +100,12 @@ if menu == "My Projects":
         with c8:
             img2 = Image.open("img.jpeg")
             st.image(img2,width=200)
+
+    with st.container():
+        c9,c10 = st.columns(2)
+        with c9:
+            st.subheader("Tic Tac Toe")
+            st.markdown("Github:    https://github.com/opurbo2512/Tic-Tac-Toe.git")
+        with c10:
+            img2 = Image.open("game.avif")
+            st.image(img2,width=200)
